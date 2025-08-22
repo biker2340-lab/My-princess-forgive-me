@@ -1,0 +1,65 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I’m Sorry</title>
+  <style>
+    body {
+      background: radial-gradient(circle at top, #1a1a1a, #000);
+      color: #f2f2f2;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      padding: 50px;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: glow 2s ease-in-out infinite alternate;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 20px auto;
+      max-width: 600px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    button {
+      margin-top: 40px;
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff4d4d; }
+      to { text-shadow: 0 0 20px #ff4d4d, 0 0 30px #ff9999; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>I’m Sorry</h1>
+  <p>I hurt you, and I regret it deeply.<br>
+     You mean the world to me, and I want to make things right.</p>
+  <p>This page isn’t just code—it’s my heart, glowing for you.</p>
+  <button onclick="alert('I hope you’ll forgive me 💖')">Forgive Me?</button>
+</body>
+</html>
